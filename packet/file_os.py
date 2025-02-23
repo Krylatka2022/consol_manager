@@ -52,7 +52,7 @@ def delete_item():
 
 def copy_item():
     item_name = input("Введите имя файла/папки для копирования: ")
-    if not os.path.exists(src):
+    if not os.path.exists(item_name):
         print(f"Папка или файл '{item_name}' не существует.")
         return
     new_copy = input("Введите новое имя для копии: ")
